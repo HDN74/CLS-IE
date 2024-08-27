@@ -1,0 +1,26 @@
+﻿2024/08/27 18:20:28.624 [INFO] System starting up... (main_api.py:27)
+2024/08/27 18:20:28.624 [INFO] Khởi tạo Neo4J KG (main_api.py:32)
+2024/08/27 18:20:28.624 [INFO] Khởi tạo dữ liệu bổ trợ (SupportData.py:61)
+2024/08/27 18:20:28.624 [INFO] Xử lý động từ đặc biệt (SupportData.py:63)
+2024/08/27 18:20:28.624 [INFO] Tải dữ liệu động từ đặc biệt từ file /home/huydn74/Documents/legal-information-extraction-main/support_data/danhsachdongtudacbiet.xlsx (SupportData.py:64)
+2024/08/27 18:20:29.872 [INFO] Xử lý dữ liệu động từ đặc biệt (SupportData.py:78)
+2024/08/27 18:20:31.613 [INFO] Xử lý dữ liệu động từ đặc biệt hoàn tất (SupportData.py:86)
+2024/08/27 18:20:31.614 [INFO] Xử lý động từ đặc biệt hoàn tất (SupportData.py:66)
+2024/08/27 18:20:31.614 [INFO] Đã khởi tạo xong dữ liệu bổ trợ (SupportData.py:69)
+2024/08/27 18:20:31.615 [INFO] System startup completed. (main_api.py:35)
+2024/08/27 18:21:39.034 [INFO] 127.0.0.1:36258 - "GET /docs HTTP/1.1" 404 (h11_impl.py:477)
+2024/08/27 18:21:39.113 [INFO] 127.0.0.1:36258 - "GET /favicon.ico HTTP/1.1" 404 (h11_impl.py:477)
+2024/08/27 18:21:50.591 [INFO] 127.0.0.1:45764 - "GET /docs/nlp/srl HTTP/1.1" 200 (h11_impl.py:477)
+2024/08/27 18:21:51.179 [INFO] 127.0.0.1:45764 - "GET /docs/nlp/srl.json HTTP/1.1" 200 (h11_impl.py:477)
+2024/08/27 18:25:44.183 [CRITICAL] Error: 'utf-8' codec can't decode byte 0xd0 in position 0: invalid continuation byte (helpers.py:59)
+Traceback (most recent call last):
+  File "/home/huydn74/Documents/legal-information-extraction-main/src/helpers.py", line 56, in get_ChuDe
+    json_content = json.load(file.file)['document']
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 341, in loads
+    s = s.decode(detect_encoding(s), 'surrogatepass')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd0 in position 0: invalid continuation byte
+2024/08/27 18:25:44.184 [INFO] Thời gian xử lý: 0:00:00.001275s (main_api.py:132)
+2024/08/27 18:25:44.185 [INFO] 127.0.0.1:33864 - "POST /srl/chu_de/file HTTP/1.1" 500 (h11_impl.py:477)
+2024/08/27 18:30:01.379 [INFO] System shutdown completed. (main_api.py:40)

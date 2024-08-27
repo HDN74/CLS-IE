@@ -1,0 +1,21 @@
+version: "3.0"
+
+services:
+  srl-belle:
+    image: cls-srl:latest
+    restart: unless-stopped
+    volumes:
+      - ../Input/ImportantListWords:/support_data
+      - .:/app
+    ports:
+      - "8007:8007"
+    environment:
+      - NEO4J_HOST=192.168.2.43
+      - NEO4J_AUTH_USERNAME=neo4j
+      - NEO4J_AUTH_PASSWORD=lkg_khcn
+      - NEO4J_PORT=7769
+      - NLP_API_ENDPOINT=http://192.168.2.34:6666
+      - PATH_SPECIAL_VERBS=/support_data/danhsachdongtudacbiet.xlsx
+    command: ["python3", "main_api.py"]
+  
+  

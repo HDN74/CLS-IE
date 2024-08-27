@@ -1,0 +1,4 @@
+﻿2024/08/27 16:26:10.653 [INFO] Khởi tạo dữ liệu bổ trợ (SupportData.py:61)
+2024/08/27 16:26:10.653 [INFO] Xử lý động từ đặc biệt (SupportData.py:63)
+2024/08/27 16:26:10.653 [INFO] Tải dữ liệu động từ đặc biệt từ file /home/huydn74/Documents/legal-information-extraction-main/support_data/danhsachdongtudacbiet.xlsx (SupportData.py:64)
+2024/08/27 16:26:11.913 [INFO] Xử lý dữ liệu động từ đặc biệt (SupportData.py:78)

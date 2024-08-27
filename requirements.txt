@@ -1,0 +1,24 @@
+colorlog
+fastapi
+fastapi_utils
+fastparquet
+gensim
+matplotlib
+networkx
+numpy
+openpyxl
+pandas
+pyarrow
+pyspark
+PyYAML
+python-multipart
+requests
+requests_toolbelt
+scikit-learn
+tqdm
+unidecode
+uvicorn
+
+
+# For monitoring
+prometheus-fastapi-instrumentator
